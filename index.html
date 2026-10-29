@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MedSentry proposed medical equipment condition monitoring project">
+<title>MedSentry | Smarter Maintenance Planning</title>
+<style>
+:root{--navy:#0b1f36;--blue:#123f67;--teal:#16b8b0;--ink:#15263a;--muted:#607086;--pale:#edf8fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#f8fbfd}
+.wrap{width:min(1120px,92%);margin:auto}header{background:var(--navy);color:white;position:sticky;top:0;z-index:5;border-bottom:1px solid #24415d}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0;gap:18px}.brand{font-size:1.35rem;font-weight:800}.brand span{color:var(--teal)}nav .links{display:flex;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.92rem;color:#e4edf6}
+.hero{background:radial-gradient(circle at 80% 25%,#1d6078 0,#123f67 30%,#0b1f36 72%);color:white;padding:82px 0}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}.eyebrow,.section-label{color:#078d94;text-transform:uppercase;letter-spacing:1.7px;font-weight:800;font-size:.78rem}.hero .eyebrow{color:#70e4dc}
+h1{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.06;margin:15px 0 20px;letter-spacing:-1.5px}.hero p{font-size:1.1rem;color:#d7e5f2;max-width:650px}
+.btn{display:inline-block;text-decoration:none;padding:12px 19px;border-radius:10px;font-weight:750;margin:12px 8px 0 0}.btn-primary{background:var(--teal);color:#052c3b}.btn-outline{border:1px solid #a5c4d8;color:white}
+.visual{background:#ffffff12;border:1px solid #ffffff33;border-radius:22px;padding:25px}.visual h3{margin-top:0}.status{display:flex;justify-content:space-between;gap:10px;padding:13px 0;border-bottom:1px solid #ffffff25;color:#e7f4fc}.pill{background:#f3bd55;color:#402e05;padding:3px 9px;border-radius:20px;font-size:.78rem;font-weight:800}
+section{padding:68px 0}.section-label{color:#078d94}h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.2;margin:8px 0 14px;color:var(--navy)}.lead{max-width:760px;color:var(--muted);font-size:1.05rem}
+.soft{background:var(--pale)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:white;border:1px solid #dce8ef;border-radius:16px;padding:24px;box-shadow:0 8px 24px #163b5509}.icon{font-size:1.7rem}.card h3{margin:10px 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.step{border-radius:14px;padding:21px;background:white;border:1px solid #d8e9ef}.num{font-weight:900;color:#089ca2;font-size:.82rem;letter-spacing:1px}.step h3{margin:6px 0;color:var(--navy);font-size:1.05rem}.step p{font-size:.94rem;color:var(--muted);margin:0}
+.note{border-left:4px solid var(--teal);padding:13px 17px;background:#e4f8f7;color:#24495b;border-radius:0 9px 9px 0;margin-top:25px}.cta{background:var(--navy);color:white;border-radius:22px;padding:38px}.cta h2{color:white}.cta p{color:#d2e1ed}footer{background:#071626;color:#b8c8d7;padding:25px 0;font-size:.9rem}
+@media(max-width:780px){.hero-grid{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{padding:58px 0}nav{align-items:flex-start;flex-direction:column}.links{gap:12px!important}}
+</style></head><body>
+<header><div class="wrap"><nav aria-label="Main navigation"><div class="brand">Med<span>Sentry</span></div><div class="links"><a href="#problem">The Problem</a><a href="#solution">Solution</a><a href="#workflow">How It Works</a><a href="#contact">Contact</a></div></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">A Mechatronics Engineering Project</div><h1>Smarter monitoring.<br>Better maintenance planning.</h1><p>MedSentry is a proposed sensor-based system designed to help hospital maintenance teams monitor selected equipment conditions, identify abnormal readings, and plan timely inspections.</p><a class="btn btn-primary" href="#solution">Explore MedSentry ↓</a><a class="btn btn-outline" href="#contact">Discuss the concept</a></div>
+<div class="visual"><h3>Equipment Overview <span style="font-size:.75rem;color:#b9d5e5;font-weight:400">· Concept preview</span></h3><div class="status"><span>Vibration reading</span><strong>Monitoring</strong></div><div class="status"><span>Temperature reading</span><strong>Monitoring</strong></div><div class="status"><span>System status</span><span class="pill">Prototype planned</span></div><p style="font-size:.83rem;color:#c5d9e8;margin-bottom:0">Illustrative interface only — not live equipment data.</p></div></div></section>
+<section id="problem"><div class="wrap"><div class="section-label">The challenge</div><h2>Unexpected downtime creates pressure.</h2><p class="lead">Hospitals rely on critical medical equipment. Unexpected faults can lead to urgent repairs, disrupted workflows, and extra maintenance effort. Scheduled maintenance is important, but condition changes can occur between inspections.</p></div></section>
+<section id="solution" class="soft"><div class="wrap"><div class="section-label">Our proposed solution</div><h2>Make equipment condition easier to see.</h2><p class="lead">MedSentry aims to bring selected sensor readings, simple abnormality checks, and maintenance alerts into one clear monitoring workflow.</p><div class="cards">
+<article class="card"><div class="icon">〽️</div><h3>Condition monitoring</h3><p>Candidate vibration and temperature sensors collect readings from a suitable, non-clinical test setup.</p></article>
+<article class="card"><div class="icon">📊</div><h3>Clear status display</h3><p>A planned dashboard will present readings and show when configured thresholds are exceeded.</p></article>
+<article class="card"><div class="icon">🔔</div><h3>Maintenance alerts</h3><p>Warnings can prompt a trained person to inspect the equipment; an alert alone does not confirm a fault.</p></article>
+</div></div></section>
+<section id="workflow"><div class="wrap"><div class="section-label">System workflow</div><h2>From sensor readings to a maintenance prompt.</h2><p class="lead">The initial prototype is planned around threshold-based abnormality alerts. Machine-learning-based failure prediction is a possible future enhancement after suitable data and validation are available.</p><div class="steps">
+<article class="step"><div class="num">01 / SENSE</div><h3>Condition sensors</h3><p>Measure selected parameters such as vibration or temperature on the test object.</p></article>
+<article class="step"><div class="num">02 / COLLECT</div><h3>ESP32 acquisition</h3><p>Read sensor outputs and transfer data to the processing application.</p></article>
+<article class="step"><div class="num">03 / PROCESS</div><h3>Check readings</h3><p>Apply basic data checks and compare readings with documented thresholds.</p></article>
+<article class="step"><div class="num">04 / DISPLAY</div><h3>Dashboard</h3><p>Show the latest readings, equipment status, and alert history.</p></article>
+<article class="step"><div class="num">05 / NOTIFY</div><h3>Maintenance prompt</h3><p>Flag abnormal readings so a responsible person can decide whether inspection is needed.</p></article>
+<article class="step"><div class="num">06 / FUTURE SCOPE</div><h3>Validated prediction</h3><p>Explore machine learning only if representative, labelled data can be obtained and evaluated.</p></article>
+</div><div class="note"><strong>Development status:</strong> MedSentry is currently in the research and planning stage. The literature survey is complete; hardware, dashboard implementation, and testing are planned work.</div></div></section>
+<section class="soft"><div class="wrap"><div class="section-label">Who it may support</div><h2>Designed around maintenance teams.</h2><div class="cards">
+<article class="card"><div class="icon">🧑‍🔧</div><h3>Biomedical engineers</h3><p>Review equipment-condition readings and use alerts as an additional inspection cue.</p></article>
+<article class="card"><div class="icon">🏥</div><h3>Hospital administrators</h3><p>Explore whether clearer maintenance information can support equipment availability planning.</p></article>
+<article class="card"><div class="icon">🛠️</div><h3>Service providers</h3><p>Consider how condition data might complement existing inspection and service workflows.</p></article>
+</div></div></section>
+<section id="contact"><div class="wrap"><div class="cta"><div class="section-label">Let's connect</div><h2>Interested in the MedSentry concept?</h2><p>We welcome feedback from biomedical engineering professionals, faculty, and equipment maintenance teams as we develop and evaluate the prototype.</p><a class="btn btn-primary" href="mailto:sec25mz017@sairamtap.edu.in?subject=MedSentry%20Project%20Enquiry">Contact the project team</a><p style="font-size:.82rem;margin-top:16px">sec25mz024@sairamtap.edu.in</p></div></div></section>
+</main><footer><div class="wrap">© 2026 MedSentry · Student project concept · Not a certified medical device. Not for clinical use.</div></footer>
+</body></html>
